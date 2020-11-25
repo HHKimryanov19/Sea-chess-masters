@@ -1,26 +1,121 @@
-
 body {
-  background-image: url('https://media.istockphoto.com/photos/tic-tac-toe-picture-id184335832?k=6&m=184335832&s=612x612&w=0&h=yQIISZUGBUJlbpajQj4uUKy2cji0-L6tRAfYgCElLek=');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
+	background-image: url("https://media.istockphoto.com/photos/tic-tac-toe-picture-id172445550?k=6&m=172445550&s=612x612&w=0&h=RX-bbgY7YYAgMe5dZeDaIMCCRp_S-Jv9CikiRhXrSNo=");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
+.body1 {
+	font-family: 'Inconsolata', monospace;
 }
 
-li {
-  float: left;
+nav
+{
+    position:relative;
+    width:100%;
+    height: 45px;
+    background:#34495e;
+    border-radius:8px;
+    font-size:0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+}
+nav a
+{
+    font-size:14px;
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+nav .animation
+{
+    position: absolute;
+    height: 5px;
+    bottom:0;
+    z-index:0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
 }
 
-li a {
-  display: block;
-  padding: 8px;
-  text-decoration:none;
-  color:red;
-  font-size:15pt;
+a:nth-child(1)
+{
+    width:150px;
+}
+nav .start-home,a:nth-child(1):hover~.animation
+{
+    width: 150px;
+    left:0;
+}
+
+
+a:nth-child(2)
+{
+    width:150px;
+}
+nav .start-about,a:nth-child(2):hover~.animation
+{
+    width: 150px;
+    left:150px;
+}
+
+
+a:nth-child(3)
+{
+    width:150px;
+}
+nav .start-blog,a:nth-child(3):hover~.animation
+{
+    width: 150px;
+    left:300px;
+}
+
+
+a:nth-child(4)
+{
+    width:150px;
+}
+nav .start-portfolio,a:nth-child(4):hover~.animation
+{
+    width:150px;
+    left:450px;
+}
+
+
+#paragraph {
+	text-align: center;
+	font-size:80pt;
+	color:blue;
+}
+
+#paragraph1 {
+	text-align: center;
+	font-size:100pt;
+	color:white;
+}
+
+.form {
+	text-align:center;
+	margin-top:300px;
+	font-size:20pt;
+}
+
+.log-in {
+	font-size:15pt;
+}
+
+form{
+    width: 440px;
+    padding:40px;
+    position: absolute;
+    left:32%;
+
+}
+label{
+    color:black;
 }
