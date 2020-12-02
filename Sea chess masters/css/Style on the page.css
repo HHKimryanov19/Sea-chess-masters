@@ -1,5 +1,5 @@
 body {
-	background-image: url("https://media.istockphoto.com/photos/tic-tac-toe-picture-id172445550?k=6&m=172445550&s=612x612&w=0&h=RX-bbgY7YYAgMe5dZeDaIMCCRp_S-Jv9CikiRhXrSNo=");
+	background-image: url('https://wallpaperaccess.com/full/26174.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -87,16 +87,31 @@ nav .start-portfolio,a:nth-child(4):hover~.animation
 }
 
 
-#paragraph {
-	text-align: center;
-	font-size:80pt;
-	color:blue;
+
+.paragraph {
+	font-size:20pt;
+	color:white;
 }
 
-#paragraph1 {
-	text-align: center;
-	font-size:100pt;
+p {
 	color:white;
+	font-size:15pt;
+}
+
+h2 {
+	color:white;
+}
+
+table {
+	margin-top:40px;
+}
+
+img {
+	margin-top:40px;
+}
+
+td {
+	padding-left:40px;
 }
 
 .form {
@@ -117,5 +132,12 @@ form{
 
 }
 label{
-    color:black;
+    color:white;
 }
+
+#paragraph {
+	text-align: center;
+	font-size:80pt;
+	color:white;
+}
+
