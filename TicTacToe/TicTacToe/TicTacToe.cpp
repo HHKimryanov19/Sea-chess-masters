@@ -8,128 +8,22 @@ using namespace std;
 
  void choice(int playerChoice,char sign)
  {
-     switch (playerChoice)
+     int newPosition = playerChoice;
+     if (position[playerChoice - 1] != 'X' && position[playerChoice - 1] != 'O')
      {
-     case 1:
-         if (position[0] == '1')
-         {
-             position[0] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 2:
-         if (position[1] == '2')
-         {
-             position[1] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 3:
-         if (position[2] == '3')
-         {
-             position[2] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 4:
-         if (position[3] == '4')
-         {
-             position[3] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 5:
-         if (position[4] == '5')
-         {
-             position[4] = sign;
-         }
-         else
-         {
-
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 6:
-         if (position[5] == '6')
-         {
-             position[5] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 7:
-         if (position[6] == '7')
-         {
-             position[6] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 8:
-         if (position[7] == '8')
-         {
-             position[7] = sign;
-         }
-         else
-         {
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
-     case 9:
-         if (position[8] == '9')
-         {
-             position[8] = sign;
-         }
-         else
-         {
-
-             cout << "Invalid move. Place player " << player << " press Enter and try again.";
-             player--;
-             cin.ignore();
-             cin.get();
-         }
-         break;
+          position[playerChoice - 1] = sign;
      }
+     else 
+     {
+         while (position[newPosition - 1] == 'X' || position[newPosition - 1] == 'O')
+         {
+             cout << "Enter another position: ";
+             cin >> newPosition;
+         }
+         position[newPosition - 1] = sign;
+        
+     }
+     
  }
 
 int checkWin()
